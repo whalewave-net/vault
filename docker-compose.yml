@@ -1,0 +1,17 @@
+version: '3'
+services:
+  vault:
+    restart: always
+    volumes:
+      - ./vault/config:/vault/config
+      - ./vault/logs:/vault/logs
+      - ./vault/file:/vault/file
+    network_mode: bridge
+    entrypoint: vault server --config=/vault/config/config.json
+    stdin_open: true
+    tty: true
+    cap_add: ["IPC_LOCK"]
+    image: vault:latest
+    container_name: vault.whalewave.net
+    ports:
+      - "8200:8200"

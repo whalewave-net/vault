@@ -1,0 +1,9 @@
+{
+    "algorithm_signer" : "rsa-sha2-512",
+    "allow_user_certificates": false,
+    "allow_host_certificates": true,
+    "key_type": "ca",
+    "allowed_domains" : "whalewave.net",
+    "allow_subdomains": true,
+    "ttl": "87600h"
+}

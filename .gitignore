@@ -1,0 +1,4 @@
+vault/keys/*.crt
+vault/keys/*.key
+vault/logs
+vault/file

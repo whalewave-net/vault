@@ -1,0 +1,15 @@
+{
+    "algorithm_signer" : "rsa-sha2-512",
+    "allow_user_certificates": true,
+    "allow_host_certificates": false,
+    "allowed_users": "*",
+    "allowed_extensions": "permit-pty,permit-port-forwarding,permit-X11-forwarding,permit-agent-forwarding,permit-user-rc",
+    "default_extensions": [
+    {
+        "permit-pty": ""
+    }
+    ],
+    "key_type": "ca",
+    "default_user": "shellwhale",
+    "ttl": "30s"
+}
