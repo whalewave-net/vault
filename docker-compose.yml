@@ -5,6 +5,7 @@ services:
     volumes:
       - ./vault/config:/vault/config
       - ./vault/logs:/vault/logs
+      - ./vault/keys:/vault/keys
       - ./vault/file:/vault/file
     network_mode: bridge
     entrypoint: vault server --config=/vault/config/config.json
